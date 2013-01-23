@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Try #markdown</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/app.css" />
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css' />
+		<!--<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css' />-->
 		<link href="//get.pictos.cc/fonts/397/18" rel="stylesheet" type="text/css" />
 		<!-- pagedown code // http://code.google.com/p/pagedown/wiki/PageDown -->
 		<script type="text/javascript" src="javascripts/Markdown.Converter.js"></script>
@@ -16,20 +16,21 @@
 	</head>
 	<body>
 		<header>
-			<h1>Try <strong>#markdown</strong>
+			<h1>
+				<span aria-hidden="true" data-icon="c"></span>
+				Try <strong>#markdown</strong>
 				<a href="http://daringfireball.net/projects/markdown/basics" target="_blank">
-					Learn How
+					<em>Learn How</em>
 					<span aria-hidden="true" data-icon="l"></span>
 				</a>
 			</h1>
 <!--<pre>
-###heading 3
-
 #heading 1
 
 this is just some **text** that's bold. it's also paragraph text.
 
 This is more paragraph text here.
+###heading 3
 
 fefefe [link title here](http://www.yahoo.com)
 
@@ -48,11 +49,11 @@ a code block goes here
 </pre>-->
 		</header>
 		<div id="wmd-preview" class="wmd-panel wmd-preview"></div>
-		<div role="main" class="main cf">
-		    <!--<h2>Entered as</h2>-->
-		    <textarea class="wmd-input" id="wmd-input"></textarea>
-			<!--<h2>Rendered as</h2>-->
-		</div>
+<textarea class="wmd-input" id="wmd-input">#Edit my text _(heading 1)_
+Add some content in here, or just delete this and start anew. _(paragraph text)_
+
+Or, you can [learn some markdown](http://daringfireball.net/projects/markdown/basics)
+</textarea>
 		<script type="text/javascript">
 		document.getElementById('wmd-input').focus();
 		(function() {
