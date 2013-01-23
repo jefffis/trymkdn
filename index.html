@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Try #markdown</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/app.css" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css' />
+		<link href="//get.pictos.cc/fonts/397/18" rel="stylesheet" type="text/css" />
 		<!-- pagedown code // http://code.google.com/p/pagedown/wiki/PageDown -->
 		<script type="text/javascript" src="javascripts/Markdown.Converter.js"></script>
 		<script type="text/javascript" src="javascripts/Markdown.Sanitizer.js"></script>
@@ -14,31 +16,50 @@
 	</head>
 	<body>
 		<header>
-			<h1>Try #markdown</h1>
+			<h1>Try <strong>#markdown</strong>
+				<a href="http://daringfireball.net/projects/markdown/basics" target="_blank">
+					Learn How
+					<span aria-hidden="true" data-icon="l"></span>
+				</a>
+			</h1>
+<!--<pre>
+###heading 3
+
+#heading 1
+
+this is just some **text** that's bold. it's also paragraph text.
+
+This is more paragraph text here.
+
+fefefe [link title here](http://www.yahoo.com)
+
+##an image below
+
+![this be an image](http://localhost:3001/system/uploads/images/000/000/130/200x/widescreen-l.jpg?1358954867 'this is a title')
+
+- this is an item
+- this is another item
+
+an example of `inline` code here
+
+```
+a code block goes here
+```
+</pre>-->
 		</header>
-		<div role="main">
+		<div id="wmd-preview" class="wmd-panel wmd-preview"></div>
+		<div role="main" class="main cf">
+		    <!--<h2>Entered as</h2>-->
 		    <textarea class="wmd-input" id="wmd-input"></textarea>
-			<div id="wmd-preview" class="wmd-panel wmd-preview"></div>
+			<!--<h2>Rendered as</h2>-->
 		</div>
 		<script type="text/javascript">
+		document.getElementById('wmd-input').focus();
 		(function() {
 		var converter1 = Markdown.getSanitizingConverter();
 		var editor1 = new Markdown.Editor(converter1);
 		editor1.run();
 		})();
-		/*$(function(){
-			var $textarea = $('#wmd-input');
-			var $preview = $('#wmd-preview');
-			$textarea.on('keyup',function(){
-				var $this = $(this);
-				var $this_val = $this.val();
-				if($this_val==''){
-					$preview.removeClass('content');
-				}else{
-					$preview.addClass('content');
-				}
-			});
-		});*/
 		</script>
 	</body>
 </html>
