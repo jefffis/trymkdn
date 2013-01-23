@@ -81,7 +81,7 @@ header h1 {
 	padding:0 0 .15em .75em;
 	margin:0;
 	position:relative;
-	opacity:.9;
+	opacity:.5;
 }
 /*header h1:hover, header h1:focus {
 	opacity:.9;
@@ -148,6 +148,7 @@ textarea {
 }
 textarea:focus, textarea:active {
 	background:#333;
+	/*text-shadow:0 0 1px rgba(255,255,0,0.25), 0 0 5px rgba(255,255,0,0.15), 0 0 20px rgba(255,255,0,0.1);*/
 }
 .wmd-preview {
 	float:right;
@@ -160,7 +161,7 @@ textarea:focus, textarea:active {
 	/*color:white;
 	text-shadow:0 1px 0 rgba(0,0,0,0.2), 0 2px 1px rgba(0,0,0,0.1), 0 3px 2px rgba(0,0,0,0.05);*/
 	text-shadow:none;
-	color:#999;
+	color:#888;
 	background:white;
 }
 .wmd-preview p, .wmd-preview li {
