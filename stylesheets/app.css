@@ -82,21 +82,22 @@ header h1 {
 	margin:0;
 	position:relative;
 	opacity:.5;
+	-webkit-transition:all .2s ease-out;
+	-moz-transition:all .2s ease-out;
+	-ms-transition:all .2s ease-out;
+	transition:all .2s ease-out;
 }
-/*header h1:hover, header h1:focus {
+header h1:hover, header h1:focus {
 	opacity:.9;
-}*/
+}
 h1 a {
 	position:absolute;
 	top:2em;
 	right:1.5em;
 	font-size:50%;
 	border:0;
-	color:#040407;
-	background:yellow;
-}
-h1 a:hover, h1 a:focus {
-	background:;
+	color:yellow;
+	/*background:yellow;*/
 }
 header em {
 	font-style:normal;
@@ -111,9 +112,16 @@ h1 > span {
 h1 a span {
 	position:relative;
 	font-size:150%;
-	top:-.25em;
+	top:-.1em;
 	line-height:1;
 	padding:.15em;
+}
+h1 a:active {
+	opacity:.5;
+	-webkit-transition:none;
+	-moz-transition:none;
+	-ms-transition:none;
+	transition:none;
 }
 pre {
 	font-size:12px;
@@ -141,6 +149,7 @@ textarea {
 	transition:all .2s ease-out;
 	float:left;
 	/*border:5px solid #666;*/
+	border-radius:0;
 	background:#444;
 	position:relative;
 	z-index:1;
@@ -163,6 +172,9 @@ textarea:focus, textarea:active {
 	text-shadow:none;
 	color:#888;
 	background:white;
+}
+.wmd-preview img {
+	max-width:100%;
 }
 .wmd-preview p, .wmd-preview li {
 	letter-spacing:normal;
@@ -195,4 +207,28 @@ textarea:focus, textarea:active {
 	textarea {
 		font-size:110%;
 	}
+}
+@media screen and (max-width:600px) {
+	html {
+		background:white;
+	}
+	textarea, .wmd-preview {
+		width:100%;
+		height:50%;
+		min-height:auto;
+	}
+	textarea {
+		height:20%;
+		min-height:50%;
+	}
+	header {
+		position:relative;
+	}
+	h1 {
+		font-size:125%;
+	}
+	h1 a span {
+		font-size:200%;
+	}
+	
 }

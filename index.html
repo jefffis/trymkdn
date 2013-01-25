@@ -4,15 +4,32 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Try #markdown</title>
+		<title>Try #markdown by Jefff</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/app.css" />
-		<!--<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css' />-->
 		<link href="//get.pictos.cc/fonts/397/18" rel="stylesheet" type="text/css" />
+		
 		<!-- pagedown code // http://code.google.com/p/pagedown/wiki/PageDown -->
 		<script type="text/javascript" src="javascripts/Markdown.Converter.js"></script>
 		<script type="text/javascript" src="javascripts/Markdown.Sanitizer.js"></script>
 		<script type="text/javascript" src="javascripts/Markdown.Editor.js"></script>
-		<!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+				
+		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+		<link rel="author" href="/humans.txt" />
+		
+		<script type="text/javascript">
+	
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22790184-1']);
+		_gaq.push(['_trackPageview']);
+	
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' :'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	
+		</script>
+		
 	</head>
 	<body>
 		<header>
@@ -24,43 +41,25 @@
 					<span aria-hidden="true" data-icon="l"></span>
 				</a>
 			</h1>
-<!--<pre>
-#heading 1
-
-this is just some **text** that's bold. it's also paragraph text.
-
-This is more paragraph text here.
-###heading 3
-
-fefefe [link title here](http://www.yahoo.com)
-
-##an image below
-
-![this be an image](http://localhost:3001/system/uploads/images/000/000/130/200x/widescreen-l.jpg?1358954867 'this is a title')
-
-- this is an item
-- this is another item
-
-an example of `inline` code here
-
-```
-a code block goes here
-```
-</pre>-->
 		</header>
-		<div id="wmd-preview" class="wmd-panel wmd-preview"></div>
-<textarea class="wmd-input" id="wmd-input">#You can edit this text _(h1)_
+<textarea class="wmd-input" id="wmd-input">#Go on; edit the yellow text _(h1)_
 
 Add some content in here, or just delete this and start anew. _(some body copy)_
 
-Or, you can [learn some markdown](http://daringfireball.net/projects/markdown/basics) basics and try it out yourself.</textarea>
-		<script type="text/javascript">
-		document.getElementById('wmd-input').focus();
-		(function() {
-		var converter1 = Markdown.getSanitizingConverter();
-		var editor1 = new Markdown.Editor(converter1);
-		editor1.run();
-		})();
-		</script>
+Or, you can [learn some markdown](http://daringfireball.net/projects/markdown/basics) basics and try it out yourself.
+
+![this be an image](http://jefff.co/test/conditional-resources/kitten.jpeg 'what a cute kitten')</textarea>
+		<div id="wmd-preview" class="wmd-panel wmd-preview"></div>
+		
+	<!-- scripts -->
+	<script type="text/javascript">
+	document.getElementById('wmd-input').focus();
+	(function() {
+	var converter1 = Markdown.getSanitizingConverter();
+	var editor1 = new Markdown.Editor(converter1);
+	editor1.run();
+	})();
+	</script>
+	
 	</body>
 </html>
